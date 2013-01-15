@@ -16,11 +16,10 @@ class Hooks < Redmine::Hook::ViewListener
 				#it's recommended to default to a general group that is sure to exist to prevent the application from crashing if the target group cannot be found
 				#if(targetGroup.nil?)
 				#	targetGroup = Group.find_by_lastname("Helpdesk")
-				#	end
+				#end
 				
 				context[:issue].assigned_to_id = targetGroup.id
 			end
 		end
 	end
-  end
 end
