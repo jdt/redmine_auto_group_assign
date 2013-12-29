@@ -1,3 +1,6 @@
+require 'redmine'
+require_dependency 'auto_group_assign/hooks.rb'
+
 Redmine::Plugin.register :redmine_auto_group_assign do
   name 'Redmine Auto Group Assign plugin'
   author 'Jesper De Temmerman'
